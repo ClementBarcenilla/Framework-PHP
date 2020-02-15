@@ -37,4 +37,6 @@ Route::resource('admins', 'AdminController');
 
 Route::resource('users', 'UserController');
 
+Route::resource('skillusers', 'SkillUserController');
+
 });

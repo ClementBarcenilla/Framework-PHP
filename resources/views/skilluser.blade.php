@@ -37,7 +37,7 @@
                         <button class="btn btn-success" type="submit">Add</button>
                     </td>
                     <td>
-                      <button  class="btn btn-warning">Edit</button>
+                      <button  class="btn btn-warning" type="submit">Edit</button>
                     </td>
                     <td>         
                         <button class="btn btn-danger" type="submit">Delete</button>

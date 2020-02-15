@@ -33,12 +33,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                    <a class="nav-link" href="/skills/">Skill Table</a>                  
+                    @if (Auth::check() && Auth::user()->rank === 'admin')
+                    <a class="nav-link" href="/skills/">Skill Table</a>   
+                    @endif               
                     </ul>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
+                    @if (Auth::check() && Auth::user()->rank === 'admin')
                     <a class="nav-link" href="/admin/">Admin</a>
+                    @endif
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
